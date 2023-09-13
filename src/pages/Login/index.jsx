@@ -9,7 +9,7 @@ export default function Login()
             </Nav>
             <Main>
                 <div>
-                    <h4>Faça o login para acessar a interface de gerenciamento !</h4>
+                    <h4>Faça o login para acessar a interface de gerenciamento!</h4>
                 </div>
 
                 <form>
