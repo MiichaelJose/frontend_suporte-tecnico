@@ -16,4 +16,13 @@ export default createGlobalStyle`
     h1, h2, h3, h4 {
         font-family: 'Bebas Neue', sans-serif;
     }
+    
+    p {
+        font-size: 1.17rem;
+    }
+
+    input, button {
+        outline: none;
+        border: none;
+    }
 `
