@@ -7,7 +7,7 @@ export function GroupRouters()
 {
     return(
         <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Ticket />} />
         </Routes>
     )
 }

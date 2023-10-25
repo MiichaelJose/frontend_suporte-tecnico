@@ -12,9 +12,10 @@ class ApiService {
       }
     }
 
-    async post(endpoint = "") {
+    async post(endpoint = "", body) {
         try {
-          const response = await fetch(`${this.url}${endpoint}`);
+          const response = await fetch(`${this.url}${endpoint}`, body);
+          console.log('aqui ' + response);
           return await response.json();
         } catch (error) {
           throw error;
@@ -22,4 +23,4 @@ class ApiService {
       }
   }
   
-  export default new ApiService('');
+  export default new ApiService('http://localhost:8080');

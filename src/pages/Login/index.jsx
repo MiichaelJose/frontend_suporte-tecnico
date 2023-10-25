@@ -2,7 +2,9 @@ import { Pag, Nav, Main } from "./styles"
 
 import { useState } from "react";
 
-import api from "../../services/api.service";
+import axios from "axios";
+
+//import api from "../../services/api.service";
 
 export default function Login()
 {
@@ -10,8 +12,22 @@ export default function Login()
     const [senha, setSenha]  = useState('')
 
     function acessar() {
-        console.log(cpf );
-        console.log(senha);
+        const body = {
+            "cpf":cpf,
+            "senha":senha,
+        }
+        
+        axios.post("http://localhost:8080/login",body, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }) 
+        .then(({data}) => {
+            console.log(data);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
 
     return(
