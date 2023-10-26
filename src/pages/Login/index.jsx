@@ -23,7 +23,8 @@ export default function Login()
             }
         }) 
         .then(({data}) => {
-            console.log(data);
+            localStorage.setItem("data", JSON.stringify(data)) 
+            window.location.href = '/ticket'
         })
         .catch(function (error) {
             console.log(error);
