@@ -1,6 +1,9 @@
-export default {
-    COLORS: {
-        WHITE: "#E1E1E6",
-        BLACK: "#121214",
-    }
+const theme = {
+    colors: {
+        white: '#e1e1e6',
+        black: '#121214',
+    },
+    mode: 'light'
 }
+
+export default theme

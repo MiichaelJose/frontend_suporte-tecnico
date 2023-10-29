@@ -1,16 +1,18 @@
-import { Header, Nav, Button } from "./styles"
+import { Header } from "./styles"
+
+import Logo from '../../../assets/menu.png';
 
 export default function Home()
 {
     return(
         <>
             <Header>
-                <h1>HELPDESK</h1>
+                <div>
+                    <h2>HELPDESK</h2>
+                    <h3>SERVIÇOS</h3>
+                </div>
 
-                <Nav>
-                    <Button>Cadastrar</Button>
-                    <Button>Usuarios</Button>
-                </Nav>
+                <img src={Logo} alt="oi" />
             </Header>
         </>
     )

@@ -26,7 +26,7 @@ export const Nav = styled.div`
 `
 
 export const Main = styled.main`
-    margin-top: 15%;
+    margin-top: 50px;
     padding: 15px;
 
     width: 100%;
@@ -57,10 +57,10 @@ export const Main = styled.main`
         >input {
             height: 47px;
             width: 100%;
-            border-radius: 50px;
-            box-shadow: 2px 2px gray;
+            border-radius: 5px;
+            box-shadow: 1.9px 2px lightgray;
             padding-left: 20px;
-            border: 1px solid lightgray;
+            border: 0.4px solid lightgray;
         }
 
         >button {

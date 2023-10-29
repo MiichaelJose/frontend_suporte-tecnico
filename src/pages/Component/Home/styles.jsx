@@ -2,21 +2,26 @@ import styled from "styled-components";
 
 export const Header = styled.header`
     width: 100%;
-    height: 150px;
+    height: 70px;
     max-height: 30%;
-    border: 2px solid lightpink;
     position: fixed;
     text-align: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     display: flex;
-    flex-direction: column;
 
-    > h1 {
-        margin-top: 10px;
+    > div {
+        width: fit-content;
+        height: fit-content;
+        color: white;
+        
+        >h3 {
+            text-align: right;
+        }
     }
 `;
 
-export const Nav = styled.nav`
+/*export const Nav = styled.nav`
     width: 100%;
     height: 70px;
     display: flex;
@@ -24,6 +29,7 @@ export const Nav = styled.nav`
     background-color: #e7b6e7df;
     align-items: center;
 `;
+*/
 
 export const Button = styled.button`
     width: 85px;
