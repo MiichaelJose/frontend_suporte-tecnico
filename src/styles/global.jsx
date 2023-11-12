@@ -23,7 +23,7 @@ export default createGlobalStyle`
         font-size: 1.1rem;
     }
 
-    input, button {
+    input, button, textarea {
         outline: none;
         border: none;
     }

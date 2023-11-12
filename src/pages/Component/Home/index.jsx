@@ -1,4 +1,4 @@
-import { Header, Main } from "./styles"
+import { Header } from "./styles"
 
 import Logo from '../../../assets/menu.png';
 
@@ -14,12 +14,6 @@ export default function Home()
 
                 <img src={Logo} alt="oi" />
             </Header>
-            <Main>
-
-            </Main>
-            <Footer>
-                
-            </Footer>
         </>
     )
 }

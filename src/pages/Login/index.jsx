@@ -1,10 +1,11 @@
-import { Pag, Nav, Main } from "./styles"
+import { Pag, Main } from "./styles"
+
+import Nav from "../Component/Nav";
 
 import { useState } from "react";
 
 import axios from "axios";
 
-//import api from "../../services/api.service";
 
 export default function Login()
 {
@@ -33,10 +34,7 @@ export default function Login()
 
     return(
         <Pag>
-            <Nav>
-                <h1>HELPDESK</h1>
-                <h3>SERVIÇOS</h3>
-            </Nav>
+            <Nav/>
             <Main>
                 <h2>Login</h2>
 
