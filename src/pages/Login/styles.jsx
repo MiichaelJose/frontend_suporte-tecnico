@@ -10,8 +10,6 @@ export const Pag = styled.div`
     border: 1px solid black;
 `
 
-
-
 export const Main = styled.main`
     margin-top: 50px;
     padding: 15px;

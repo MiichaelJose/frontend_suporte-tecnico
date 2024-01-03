@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Main = styled.div`
     width: 100%;
@@ -32,9 +32,10 @@ export const Section = styled.div`
         justify-content: space-around;
     }
 
-    input, button {
-        height: 30px;
-        width: 70%;
+    input {
+        height: 10%;
+        max-height: 45px;
+        width: 100%;
         border-radius: 5px;
         background-color: #BCBBBB;
     }
@@ -43,6 +44,8 @@ export const Section = styled.div`
         background-color: #4F4F4F;
         color: white;
         width: 50%;
+        height: 10%;
+        max-height: 45px;
     }
 
     textarea {

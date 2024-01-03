@@ -2,9 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
     * {
         margin: 0;
         box-sizing: border-box;
@@ -12,6 +9,7 @@ export default createGlobalStyle`
     }
 
     body {
+        font-size: 12px;
         background-color: ${props => props.theme.colors.black };
     }
 
@@ -20,11 +18,15 @@ export default createGlobalStyle`
     }
     
     p {
-        font-size: 1.1rem;
+        font-size: 1.18em;
     }
 
     input, button, textarea {
         outline: none;
         border: none;
+    }
+
+    input, textarea   {
+        padding-left: 15px;
     }
 `

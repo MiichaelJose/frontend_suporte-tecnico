@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Header = styled.header`
     width: 100%;
     height: 70px;
-    max-height: 30%;
-    position: fixed;
+    max-height: 10vh;
+    // position: relative;
     text-align: center;
     align-items: center;
     justify-content: space-around;
@@ -21,15 +21,18 @@ export const Header = styled.header`
     }
 `;
 
-/*export const Nav = styled.nav`
+export const AreaMenu = styled.div` 
     width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #e7b6e7df;
-    align-items: center;
-`;
-*/
+    height: 90vh;
+`
+
+export const MenuLateral = styled.div` 
+    width: 70vw;
+    height: 100%;
+    margin-left: auto;
+    
+    background-color: #838383;
+`
 
 export const Button = styled.button`
     width: 85px;

@@ -6,9 +6,8 @@ export default function Ticket()
 
     return(
         <div>
-            <Home>
+            <Home />
                 
-            </Home>
         </div>
     )
 }

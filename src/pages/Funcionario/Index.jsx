@@ -1,33 +1,26 @@
-import { Main, Section } from './styles'
+import { Main , Section} from "./styles"
 
-import Nav from '../Component/Nav'
+import Nav from "../Component/Nav"
 
-export default function Funcionario()
-{
+export default function Funcionario() {
     return(
         <Main>
             <Nav> </Nav>
             <Section>
-                <h4>preencha os campos a seguir para acessar tela de chamados</h4>
+                <p>preencha os campos a seguir para acessar tela de chamados</p>
                 
                 <div>
-                    <div>
-                        <h4>CPF</h4>
-                        <input type="text" />
-                    </div>
+                    <h4>CPF</h4>
+                    <input type="text" />
                     
-                    <div id='bloco-inputs'>
-                        <h4>DEPARTAMENTO</h4>
-                        <input type="text" /> 
+                    <h4>DEPARTAMENTO</h4>
+                    <input type="text" /> 
 
-                        <h4>SERIAL EQUIPAMENTO</h4>
-                        <input type="text" />  
-                    </div>
+                    <h4>SERIAL EQUIPAMENTO</h4>
+                    <input type="text" />  
 
-                    <div>
-                        <h4>DESCRIÇÃO</h4>
-                        <textarea></textarea>
-                    </div>
+                    <h4>DESCRIÇÃO</h4>
+                    <textarea></textarea>
 
                     <button>ACIONAR</button>
                 </div>

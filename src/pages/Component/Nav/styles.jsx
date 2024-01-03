@@ -7,10 +7,11 @@ export const Main = styled.div`
     justify-content: center;
     color: white;
 
-    >h1 {
+    > h1 {
         text-align: center;
     }
-    >h3 {
+    
+    > h3 {
         text-align: right;
     }
 `
