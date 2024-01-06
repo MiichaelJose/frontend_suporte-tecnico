@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Main = styled.div`
+export const Pag = styled.div`
     width: 100%;
     height: 100vh;
     flex-direction: column;
@@ -16,7 +16,8 @@ export const Section = styled.div`
 
     width: 100%;
     max-width: 375px;
-    height: 70%;
+    height: 80%;
+    max-height: 600px;
 
     color: white;
     background-color: #838383;

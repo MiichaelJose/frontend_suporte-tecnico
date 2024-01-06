@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Main = styled.div`
+export const Pag = styled.div`
     width: fit-content;
     height: fit-content;
     margin-top: 15px;

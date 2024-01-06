@@ -1,6 +1,6 @@
-import { Pag, Main } from "./styles"
+import { Pag, Section } from "./styles"
 
-import Nav from "../Component/Nav";
+import Logo from "../Component/LogoEmpresa";
 
 import { useState } from "react";
 
@@ -34,8 +34,8 @@ export default function Login()
 
     return(
         <Pag>
-            <Nav/>
-            <Main>
+            <Logo/>
+            <Section>
                 <h2>Login</h2>
 
                 <p>preencha os campos a seguir para acessar tela de chamados</p>
@@ -47,7 +47,7 @@ export default function Login()
 
                     <button onClick={() => acessar()}>Acessar</button>
                 </div>
-            </Main>
+            </Section>
         </Pag>
     )
 }

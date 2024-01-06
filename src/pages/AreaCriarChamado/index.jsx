@@ -1,11 +1,11 @@
-import { Main , Section} from "./styles"
+import { Pag , Section} from "./styles"
 
-import Nav from "../Component/Nav"
+import Logo from "../Component/LogoEmpresa"
 
 export default function Funcionario() {
     return(
-        <Main>
-            <Nav> </Nav>
+        <Pag>
+            <Logo/>
             <Section>
                 <p>preencha os campos a seguir para acessar tela de chamados</p>
                 
@@ -25,6 +25,6 @@ export default function Funcionario() {
                     <button>ACIONAR</button>
                 </div>
             </Section>
-        </Main>
+        </Pag>
     )
 }

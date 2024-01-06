@@ -1,16 +1,19 @@
 import {Route, Routes} from "react-router-dom"
 
-import Funcionario from "../pages/Funcionario"
+import AreaCriarChamado from "../pages/AreaCriarChamado"
 import Login from "../pages/Login"
-import Ticket from "../pages/Ticket"
+import Home from "../pages/Home"
+
+import Ticket from "../pages/Home/Ticket"
 
 export function GroupRouters() 
 {
     return(
         <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/funcionario" element={<Funcionario />} />
-            <Route path="/ticket" element={<Ticket />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/criarchamado" element={<AreaCriarChamado />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/home/ticket" element={<Ticket />} />
         </Routes>
     )
 }

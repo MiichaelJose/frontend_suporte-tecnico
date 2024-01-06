@@ -10,7 +10,7 @@ export const Pag = styled.div`
     border: 1px solid black;
 `
 
-export const Main = styled.main`
+export const Section = styled.main`
     margin-top: 50px;
     padding: 15px;
 
@@ -29,6 +29,7 @@ export const Main = styled.main`
     >p {
         margin-top: 25px;
     }   
+
     >div {
         width: 90%;
         height: 50%;
@@ -37,7 +38,6 @@ export const Main = styled.main`
         justify-content: space-evenly;
         align-items: center;
         display: flex;
-
 
         >input {
             height: 47px;
