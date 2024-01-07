@@ -10,23 +10,24 @@ export const Header = styled.header`
     justify-content: space-around;
     display: flex;
     padding: 0.8em;
+
+    position: static;
 `;
 
 
 export const MenuLateral = styled.div` 
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     position: fixed;
     background-color: #414143;
 
+    position: fixed;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 
-    > div {
-        
-    }
+    overflow: hidden;
 `
 
 export const Button = styled(Link)`
