@@ -16,10 +16,31 @@ export default function Ticket() {
                 </Opcoes>
                 <AreaServicosTicket>
 
-                    <div>
-
+                    <Card>
                         
-                    </div>
+                        
+                    </Card>
+
+                    <Card>
+                        
+                        
+                    </Card>
+
+                    <Card>
+                        
+                        
+                    </Card>
+
+
+                    <Card>
+                        
+                        
+                    </Card>
+
+                    <Card>
+                        
+                        
+                    </Card>
 
 
                 </AreaServicosTicket>

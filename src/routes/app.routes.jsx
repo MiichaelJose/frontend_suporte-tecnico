@@ -3,7 +3,6 @@ import {Route, Routes} from "react-router-dom"
 import AreaCriarChamado from "../pages/AreaCriarChamado"
 import Login from "../pages/Login"
 import Home from "../pages/Home"
-
 import Ticket from "../pages/Home/Ticket"
 
 export function GroupRouters() 

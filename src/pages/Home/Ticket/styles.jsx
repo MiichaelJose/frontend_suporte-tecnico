@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    height: 90vh;
+    height: 83vh;
     overflow-y:auto ;
 
     scrollbar-width: thin;
@@ -41,9 +41,9 @@ export const Opcoes = styled.div`
 export const Button = styled.button`
     width: 100px;
     height: 35px;
-    border-radius: 5px;
     text-align: center;
-    background-color: #8a8a8a;
+    background-color: #8a8a8a6b;
+    color: white;
 `
 
 export const Card = styled.div`

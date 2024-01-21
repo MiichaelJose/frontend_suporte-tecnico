@@ -2,22 +2,32 @@ import styled from "styled-components";
 
 import { Link } from 'react-router-dom';
 
+
+export const Main = styled.main`
+    width: 100%;
+    height: 100%;
+    max-height: 17vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: static;
+
+`;
+
 export const Header = styled.header`
     width: 100%;
-    height: 100px;
-    max-height: 10vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     padding: 0.8em;
-
-    position: static;
 `;
+
+
 
 
 export const MenuLateral = styled.div` 
     width: 100vw;
-    height: 90vh;
+    height: 83vh;
     position: fixed;
     background-color: #414143;
 
@@ -39,3 +49,21 @@ export const Button = styled(Link)`
     text-decoration: none;
     cursor: pointer;
 `
+
+export const Opcoes = styled.div`
+    height: 7vh;
+    width: 100%;
+    align-items: center;
+    padding: 0.8em;
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    font-weight: bold;
+
+    #bordaleft {
+        border-left: 3px solid black;
+        padding: 5px;
+        cursor: pointer;
+    }
+`
+

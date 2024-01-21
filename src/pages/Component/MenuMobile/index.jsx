@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-import { Link } from 'react-router-dom';
-
-import { Header, MenuLateral, Button } from "./styles"
+import { Main, Header, MenuLateral, Button, Opcoes } from "./styles"
 
 import Logo from "../LogoEmpresa"
 
@@ -32,11 +30,24 @@ export default function Home()
 
     return(
         <>
-            <Header>
-                <Logo/>
+            <Main>
+                <Header> 
+                    <Logo/>
 
-                <img src={mostrarComponente ? LogoMenuFechar : LogoMenuAbrir} alt="logo-left-bar" onClick={() => click()}/>
-            </Header>
+                    <img src={mostrarComponente ? LogoMenuFechar : LogoMenuAbrir} alt="logo-left-bar" onClick={() => click()}/>
+                </Header>
+                <Opcoes>
+                    <div>
+                        <p>NOME</p>
+                        <p>FUNCAO</p>
+                    </div>
+
+                    <div id='bordaleft'>
+                        <p>SAIR</p>
+                    </div>
+                </Opcoes>
+            </Main>
+            
             
             {mostrarComponente ? tela() : false }
            
