@@ -14,7 +14,7 @@ export default function Home()
     function tela () {
         return(
             <MenuLateral>
-                <Button to={"/home/ticket"}><h2>Tickets</h2></Button>
+                <Button to={"/home/ticket-registro"}><h2>Tickets</h2></Button>
                 
                 <Button to={"/home/ticket"}><h2>Usuarios</h2></Button>
 

@@ -1,18 +1,16 @@
-import { Section, Opcoes, Button, Card,  AreaServicosTicket, Image} from "./styles"
+import { Section, Card,  AreaServicosTicket, Image} from "./styles"
+
+import BottomSideBar from "../Components/BottomSideBar"
 
 import MenuMobile from '../../Component/MenuMobile'
 import IconUser from "../../../assets/icon-user.png"
 
-
-export default function Ticket() {
+export default function TicketRegistro() {
     return(
         <>
             <MenuMobile/>
             <Section>
-                 <Opcoes>
-                    <Button>registros</Button>
-                    <Button>cadastrar</Button>
-                </Opcoes>
+                <BottomSideBar/>
                 <AreaServicosTicket>
                     <Card>
                         <div>
