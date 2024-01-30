@@ -29,6 +29,10 @@ export default createGlobalStyle`
     }
 
     input, textarea   {
-        padding-left: 15px;
+        padding-inline: 15px;
+    }
+
+    input {
+        border-radius: 5px;
     }
 `

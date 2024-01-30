@@ -14,11 +14,9 @@ export default function Home()
     function tela () {
         return(
             <MenuLateral>
-                <Button to={"/home/ticket-registro"}><h2>Tickets</h2></Button>
-                
-                <Button to={"/home/ticket"}><h2>Usuarios</h2></Button>
-
-                <Button to={"/home"}><h2>Home</h2></Button>
+                <Button to={"/home/ticket-registro"}><h2>ticket</h2></Button>
+                <Button to={"/home/ticket"}><h2>usuario</h2></Button>
+                <Button to={"/home"}><h2>home</h2></Button>
             </MenuLateral>
         )
     }
@@ -33,7 +31,6 @@ export default function Home()
             <Main>
                 <Header> 
                     <Logo/>
-
                     <img src={mostrarComponente ? LogoMenuFechar : LogoMenuAbrir} alt="logo-left-bar" onClick={() => click()}/>
                 </Header>
                 <Opcoes>
@@ -41,16 +38,13 @@ export default function Home()
                         <p>NOME</p>
                         <p>FUNCAO</p>
                     </div>
-
                     <div id='bordaleft'>
                         <p>SAIR</p>
                     </div>
                 </Opcoes>
             </Main>
             
-            
             {mostrarComponente ? tela() : false }
-           
         </>
     )
 }

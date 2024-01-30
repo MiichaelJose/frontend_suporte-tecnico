@@ -20,3 +20,9 @@ export const Section = styled.div`
         border-radius: 6px;
     }
 `
+
+export const AreaCadastro = styled.div`
+    width: 100%;
+    padding-top: 15px;
+    height: 90%;
+`
