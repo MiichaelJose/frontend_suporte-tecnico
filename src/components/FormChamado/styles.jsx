@@ -15,7 +15,6 @@ export const Pag = styled.div`
     
     > div{
         height: 90%;
-
         text-align: left;
         display: flex;
         flex-direction: column;

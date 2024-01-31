@@ -1,11 +1,10 @@
 import { Pag, Section } from "./styles"
 
-import Logo from "../Component/LogoEmpresa";
-
 import { useState } from "react";
 
-import axios from "axios";
+import Logo from "../../components/LogoEmpresa";
 
+import axios from "axios";
 
 export default function Login()
 {

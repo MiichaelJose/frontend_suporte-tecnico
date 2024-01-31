@@ -4,8 +4,8 @@ import { Main, Header, MenuLateral, Button, Opcoes } from "./styles"
 
 import Logo from "../LogoEmpresa"
 
-import LogoMenuAbrir from '../../../assets/menu.png';
-import LogoMenuFechar from '../../../assets/close.png';
+import LogoMenuAbrir from '../../assets/menu.png';
+import LogoMenuFechar from '../../assets/close.png';
 
 export default function Home()
 {
@@ -15,7 +15,7 @@ export default function Home()
         return(
             <MenuLateral>
                 <Button to={"/home/ticket-registro"}><h2>ticket</h2></Button>
-                <Button to={"/home/ticket"}><h2>usuario</h2></Button>
+                <Button to={"/home/usuario-cadastro"}><h2>usuario</h2></Button>
                 <Button to={"/home"}><h2>home</h2></Button>
             </MenuLateral>
         )
