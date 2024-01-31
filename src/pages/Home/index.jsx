@@ -10,11 +10,11 @@ export default function Ticket()
         <>
             <MenuMobile />
 
-             <Section>
+            <Section>
                 <img src={Img} alt="" />
                 <h1>Bem-Vindo ao HelpDesk</h1>
                 <h2>Explore o sistema através do menu!</h2>
-             </Section>
+            </Section>
         </>
     )
 }
