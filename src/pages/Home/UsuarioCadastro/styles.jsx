@@ -20,3 +20,16 @@ export const Section = styled.section`
         border-radius: 6px;
     }
 `
+
+export const AreaCadastro = styled.div`
+    width: 100%;
+    height: 90%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const FormUsuario = styled.div`
+
+`

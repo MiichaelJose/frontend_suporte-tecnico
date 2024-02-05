@@ -12,6 +12,7 @@ export default function UsuarioRegistro() {
             <MenuMobile/>
             <Section>
                 <BottomSideBar urlEl1={urlEl1} urlEl2={urlEl2} />
+                
             </Section>  
         </>
     )
