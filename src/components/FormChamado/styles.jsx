@@ -35,10 +35,4 @@ export const Pag = styled.div`
         height: 100px;
         background-color: #BCBBBB;
     }
-
-    #bloco-inputs {
-        h4 {
-            margin-top: 15px;
-        }
-    }
 `

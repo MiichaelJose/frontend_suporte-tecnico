@@ -14,9 +14,9 @@ export default function Home()
     function tela () {
         return(
             <MenuLateral>
-                <Button to={"/home/ticket-registro"}><h2>ticket</h2></Button>
-                <Button to={"/home/usuario-cadastro"}><h2>usuario</h2></Button>
-                <Button to={"/home"}><h2>home</h2></Button>
+                <Button to={"/home/ticket-registro"}><h3>TICKET</h3></Button>
+                <Button to={"/home/usuario-cadastro"}><h3>USUARIO</h3></Button>
+                <Button to={"/home"}><h3>HOME</h3></Button>
             </MenuLateral>
         )
     }
@@ -35,8 +35,8 @@ export default function Home()
                 </Header>
                 <Opcoes>
                     <div>
-                        <p>NOME</p>
-                        <p>FUNCAO</p>
+                        <p>Mikaelly J. Silva</p>
+                        <p>ADM</p>
                     </div>
                     <div id='bordaleft'>
                         <p>SAIR</p>
