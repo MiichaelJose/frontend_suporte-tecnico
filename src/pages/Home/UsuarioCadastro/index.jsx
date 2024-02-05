@@ -16,8 +16,6 @@ export default function UsuarioCadastro() {
                 <BottomSideBar urlEl1={urlEl1} urlEl2={urlEl2} />
                 <AreaCadastro>
                     <FormUsuario>
-                        <p>Cadastrar técnico</p>
-                    
                         <div>
                             <p>Nome de Usuario</p>
                             <Input type="text" content={"100%"}/>   
