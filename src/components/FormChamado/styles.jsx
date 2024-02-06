@@ -21,8 +21,14 @@ export const Pag = styled.div`
         justify-content: space-around;
     }
 
+    textarea {
+        width: 100%;
+        height: 100px;
+        background-color: #BCBBBB;
+    }
+`
 
-    button {
+/* button {
         background-color: #4F4F4F;
         color: white;
         width: 50%;
@@ -30,9 +36,4 @@ export const Pag = styled.div`
         max-height: 45px;
     }
 
-    textarea {
-        width: 100%;
-        height: 100px;
-        background-color: #BCBBBB;
-    }
-`
+   */

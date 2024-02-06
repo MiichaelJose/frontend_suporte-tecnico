@@ -1,19 +1,21 @@
 import { Section, AreaUsuarios, Card, Image } from "./styles"
 
-import IconUser from "../../../assets/homem.png"
+import { config, urlLink } from "../../../config/config_script"
 
+import IconUser from "../../../assets/homem.png"
 import MenuMobile from '../../../components/MenuMobile'
 import BottomSideBar from "../Components/BottomSideBar"
+import Button from "../../../components/Button"
 
 export default function UsuarioRegistro() {
-    const urlEl1 = "/home/usuario-registro" 
-    const urlEl2 = "/home/usuario-cadastro"
-
     return(
         <>
             <MenuMobile/>
             <Section>
-                <BottomSideBar urlEl1={urlEl1} urlEl2={urlEl2} />
+                <BottomSideBar>
+                    <Button url={urlLink.urluserreg} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarreg}/>
+                    <Button url={urlLink.urlusercad} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarcad}/>
+                </BottomSideBar>
                 <AreaUsuarios>
                     <Card>
                         <div>

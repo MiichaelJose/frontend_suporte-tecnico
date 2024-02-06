@@ -1,7 +1,6 @@
 import { Pag } from "./styles"
 
-export default function Logo()
-{
+export default function Logo() {
     return(
         <Pag>
             <h1>HELPDESK</h1>

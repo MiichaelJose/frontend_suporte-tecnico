@@ -1,8 +1,7 @@
 import { Main } from "./styles"
 
-export default function Input({content}) {
-    console.log(content);
+export default function Input({width}) {
     return(
-        <Main width={content} />
+        <Main width={width}/>
     )
 }

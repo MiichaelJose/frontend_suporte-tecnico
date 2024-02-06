@@ -1,8 +1,9 @@
 import { Pag } from "./styles"
 
-import Input from "../Input"
+import { config } from "../../config/config_script"
 
-//import Button from "../Button"
+import Input from "../Input"
+import Button from "../Button"
 
 export default function FormChamado({text}) {
     return(
@@ -22,7 +23,7 @@ export default function FormChamado({text}) {
                 <h4>DESCRIÇÃO</h4>
                 <textarea></textarea>
 
-                <button>ACIONAR</button>
+                <Button width={config.width50} text={config.buttontextform}/>
             </div>
         </Pag>
     )

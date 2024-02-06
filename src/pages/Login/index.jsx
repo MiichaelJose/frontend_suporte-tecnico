@@ -1,13 +1,12 @@
-import { Pag, Section } from "./styles"
-
 import { useState } from "react";
-
-import Logo from "../../components/LogoEmpresa";
 
 import axios from "axios";
 
-export default function Login()
-{
+import { Pag, Section } from "./styles"
+
+import Logo from "../../components/LogoEmpresa";
+
+export default function Login() {
     const [cpf, setCpf]  = useState('')
     const [senha, setSenha]  = useState('')
 

@@ -1,19 +1,21 @@
 import { Section, Card,  AreaServicosTicket, Image} from "./styles"
 
-import BottomSideBar from "../Components/BottomSideBar"
+import { config, urlLink } from "../../../config/config_script"
 
+import BottomSideBar from "../Components/BottomSideBar"
 import MenuMobile from '../../../components/MenuMobile'
 import IconUser from "../../../assets/icon-user.png"
+import Button from "../../../components/Button"
 
 export default function TicketRegistro() {
-    const urlEl1 = "/home/ticket-registro" 
-    const urlEl2 = "/home/ticket-cadastro"
-    
     return(
         <>
             <MenuMobile/>
             <Section>
-                <BottomSideBar urlEl1={urlEl1} urlEl2={urlEl2}/>
+                <BottomSideBar>
+                    <Button url={urlLink.urlticketreg} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarreg}/>
+                    <Button url={urlLink.urlticketcad} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarcad}/>
+                </BottomSideBar>
                 <AreaServicosTicket>
                     <Card>
                         <div>

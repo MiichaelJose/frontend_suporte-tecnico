@@ -1,9 +1,7 @@
 import { Main } from "./styles"
 
-export default function Button() {
+export default function Button({url, width, background, text}) {
     return(
-        <Main>
-
-        </Main>
+        <Main to={url} width={width} backgroundcolor={background}>{text}</Main>
     )
 }

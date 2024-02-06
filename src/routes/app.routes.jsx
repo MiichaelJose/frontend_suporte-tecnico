@@ -8,8 +8,7 @@ import TicketCadastro from "../pages/Home/TicketCadastro"
 import UsuarioRegistro from "../pages/Home/UsuarioRegistro"
 import UsuarioCadastro from "../pages/Home/UsuarioCadastro"
 
-export function GroupRouters() 
-{
+export function GroupRouters() {
     return(
         <Routes>
             <Route path="/login" element={<Login />} />

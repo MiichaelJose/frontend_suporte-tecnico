@@ -1,32 +1,34 @@
 import { Section, AreaCadastro, FormUsuario } from "./styles"
 
+import { config, urlLink } from "../../../config/config_script"
+
 import MenuMobile from '../../../components/MenuMobile'
 import BottomSideBar from "../Components/BottomSideBar"
-
 import Input from "../../../components/Input"
+import Button from "../../../components/Button"
 
 export default function UsuarioCadastro() {
-    const urlEl1 = "/home/usuario-registro" 
-    const urlEl2 = "/home/usuario-cadastro"
-
     return(
         <>
             <MenuMobile/>
             <Section>
-                <BottomSideBar urlEl1={urlEl1} urlEl2={urlEl2} />
+                <BottomSideBar>
+                    <Button url={urlLink.urluserreg} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarreg}/>
+                    <Button url={urlLink.urlusercad} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarcad}/>
+                </BottomSideBar>
                 <AreaCadastro>
                     <FormUsuario>
                         <div>
                             <p>Nome de Usuario</p>
-                            <Input type="text" content={"100%"}/>   
+                            <Input type="text" width={config.width100}/>   
                             <p>CPF</p>
-                            <Input type="text" content={"70%"}/>
+                            <Input type="text" width={config.width70}/>
                             <p>Senha de primeiro acesso</p>
-                            <Input type="text" content={"70%"}/>
+                            <Input type="text" width={config.width70}/>
                             <p>Função</p>
-                            <Input type="text" content={"50%"}/>
+                            <Input type="text" width={config.width50}/>
 
-                            <button>CADASTRAR</button>  
+                            <Button width={"50%"} text={config.buttontextform}/> 
                         </div>
                     </FormUsuario>
                 </AreaCadastro> 

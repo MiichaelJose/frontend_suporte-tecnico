@@ -1,11 +1,9 @@
 import { Section } from "./styles"
 
 import Img from "../../assets/img-home.png"
-
 import MenuMobile from '../../components/MenuMobile'
 
-export default function Ticket()
-{
+export default function Ticket() {
     return(
         <>
             <MenuMobile />

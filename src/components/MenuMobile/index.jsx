@@ -3,12 +3,10 @@ import { useState } from 'react';
 import { Main, Header, MenuLateral, Button, Opcoes } from "./styles"
 
 import Logo from "../LogoEmpresa"
-
 import LogoMenuAbrir from '../../assets/menu.png';
 import LogoMenuFechar from '../../assets/close.png';
 
-export default function Home()
-{
+export default function Home() {
     const [mostrarComponente, setMostrarComponente] = useState(false);
 
     function tela () {
@@ -24,7 +22,6 @@ export default function Home()
     const click = () => {
         setMostrarComponente(!mostrarComponente)
     }
-
 
     return(
         <>
