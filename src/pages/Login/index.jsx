@@ -2,9 +2,18 @@ import { useState } from "react";
 
 import axios from "axios";
 
+import { uri } from "../../config/config_script";
+
 import { Pag, Section } from "./styles"
 
 import Logo from "../../components/LogoEmpresa";
+
+
+function decodeficador_JWT(data) {
+    const [encodedPayload] = data.token_acesso.split('.');
+
+    const payload = JSON.parse(atob(encodedPayload)).exp;
+}
 
 export default function Login() {
     const [cpf, setCpf]  = useState('')
@@ -16,14 +25,15 @@ export default function Login() {
             "senha":senha,
         }
         
-        axios.post("http://localhost:8080/login",body, {
+        axios.post(`${uri.server}/login`,body, {
             headers: {
                 'Content-Type': 'application/json'
             }
         }) 
         .then(({data}) => {
+            decodeficador_JWT(data)
             localStorage.setItem("data", JSON.stringify(data)) 
-            window.location.href = '/ticket'
+            window.location.href = '/home'
         })
         .catch(function (error) {
             console.log(error);
@@ -49,3 +59,4 @@ export default function Login() {
         </Pag>
     )
 }
+

@@ -14,3 +14,7 @@ export const urlLink = {
     urlticketreg: "/home/ticket-registro",
     urlticketcad: "/home/ticket-cadastro",
 }
+
+export const uri = {
+    server: "http://localhost:8080",
+}
