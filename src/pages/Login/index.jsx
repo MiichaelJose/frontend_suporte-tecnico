@@ -8,11 +8,12 @@ import { Pag, Section } from "./styles"
 
 import Logo from "../../components/LogoEmpresa";
 
-
 function decodeficador_JWT(data) {
     const [encodedPayload] = data.token_acesso.split('.');
 
     const payload = JSON.parse(atob(encodedPayload)).exp;
+
+    console.log(payload);
 }
 
 export default function Login() {

@@ -23,9 +23,9 @@ export default function TicketRegistro() {
                         </div>
                         <section>
                             <div>
-                                <p>EQUIPAMENTO</p>
-                                <p>COR</p>
-                                <p>DATA</p>  
+                                <p>COMPUTADOR</p>
+                                <p>Preto</p>
+                                <p>14-02-2024</p>  
                             </div>
                             <Image src={IconUser}/>
                         </section>
