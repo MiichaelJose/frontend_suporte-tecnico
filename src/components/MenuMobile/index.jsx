@@ -13,7 +13,7 @@ export default function Home() {
         return(
             <MenuLateral>
                 <Button to={"/home/ticket-registro"}><h3>TICKET</h3></Button>
-                <Button to={"/home/usuario-cadastro"}><h3>USUARIO</h3></Button>
+                <Button to={"/home/usuario-registro"}><h3>USUARIO</h3></Button>
                 <Button to={"/home"}><h3>HOME</h3></Button>
             </MenuLateral>
         )

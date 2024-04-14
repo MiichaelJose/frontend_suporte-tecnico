@@ -11,7 +11,7 @@ export default createGlobalStyle`
     body {
         height: 100%;
         font-size: 12px;
-        background-color: ${props => props.theme.colors.black };
+        background-color: ${props => props.theme.colors.black};
     }
 
     h1, h2, h3, h4 {
@@ -33,5 +33,10 @@ export default createGlobalStyle`
 
     input {
         border-radius: 5px;
+    }
+
+    .info {
+        font-size: 0.78rem;
+        font-style: italic;
     }
 `

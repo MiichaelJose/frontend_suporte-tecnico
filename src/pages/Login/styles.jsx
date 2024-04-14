@@ -17,27 +17,26 @@ export const Section = styled.main`
     width: 100%;
     max-width: 375px;
     height: 70%;
+    max-height: 500px;
 
     background-color: white;
     border-radius: 5px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     
     >p {
         margin-top: 25px;
     }   
 
-    >div {
+    >form {
         width: 90%;
         height: 50%;
-        margin-top: 35px;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         display: flex;
+        gap: 1.5rem;
 
         >input {
             height: 47px;
@@ -53,8 +52,17 @@ export const Section = styled.main`
             width: 125px;
             border-radius: 5px;
             font-weight:bold;
+            margin-inline: auto;
         }
     }
 
-    
+    > div {
+        display: flex;
+        background-color: lightgray;
+        border: 1rem;
+
+        > img {
+            width: 100px;
+        }
+    }
 `

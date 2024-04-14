@@ -7,6 +7,8 @@ import { uri } from "../../config/config_script";
 import { Pag, Section } from "./styles"
 
 import Logo from "../../components/LogoEmpresa";
+import Icon from '../../assets/icon-helpdesk.svg'
+
 
 function decodeficador_JWT(data) {
     const [encodedPayload] = data.token_acesso.split('.');
@@ -19,6 +21,7 @@ function decodeficador_JWT(data) {
 export default function Login() {
     const [cpf, setCpf]  = useState('')
     const [senha, setSenha]  = useState('')
+
 
     function acessar() {
         const body = {
@@ -47,14 +50,19 @@ export default function Login() {
             <Section>
                 <h2>Login</h2>
 
-                <p>preencha os campos a seguir para acessar tela de chamados</p>
+                <p>preencha os campos abaixo para acessar tela de chamados</p>
 
-                <div>
-                    
+                <form>
                     <input type="text" onChange={e => setCpf(e.target.value)} placeholder="cpf"/>
                     <input type="text" onChange={e => setSenha(e.target.value)} placeholder="senha"/>
 
                     <button onClick={() => acessar()}>Acessar</button>
+                </form>
+                
+                <div>
+                    <img src={Icon} alt="icon-helpdesk"/>
+
+                    <p className="info">area exclusiva apenas para a equipe do sistema helpdesk</p>
                 </div>
             </Section>
         </Pag>
