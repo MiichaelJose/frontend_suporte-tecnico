@@ -31,7 +31,7 @@ export const Section = styled.main`
         margin-top: 25px;
     }   
 
-    >form {
+    >section {
         width: 90%;
         height: 50%;
         flex-direction: column;

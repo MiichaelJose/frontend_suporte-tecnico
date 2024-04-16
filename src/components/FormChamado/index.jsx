@@ -12,7 +12,7 @@ export default function FormChamado({text}) {
                 
             <div>
                 <h4>CPF</h4>
-                <Input type="text" />
+                <Input type="text" max/>
                 
                 <h4>DEPARTAMENTO</h4>
                 <Input type="text" /> 

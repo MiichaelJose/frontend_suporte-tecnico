@@ -15,6 +15,3 @@ export const urlLink = {
     urlticketcad: "/home/ticket-cadastro",
 }
 
-export const uri = {
-    server: "http://localhost:8080",
-}
