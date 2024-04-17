@@ -19,7 +19,7 @@ export default createGlobalStyle`
     }
     
     p {
-        font-size: 1.18em;
+        font-size: 0.85rem;
     }
 
     input, button, textarea {
@@ -28,15 +28,15 @@ export default createGlobalStyle`
     }
 
     input, textarea   {
-        padding-inline: 15px;
+        padding-inline: 0.4rem;
     }
 
     input {
-        border-radius: 5px;
+        border-radius: 0.2rem;
     }
 
     .info {
-        font-size: 0.78rem;
+        font-size: 0.7rem;
         font-style: italic;
     }
 `

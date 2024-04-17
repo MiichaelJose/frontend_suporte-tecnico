@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    height: 83vh;
+    height: 80vh;
     overflow-y:auto ;
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
@@ -41,11 +41,12 @@ export const Button = styled.button`
 `
 
 export const AreaServicosTicket = styled.div`
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items:center ;
     flex-direction: column;
     background-color: #bebebe;
+    overflow-y: scroll;
 `
 
 export const Card = styled.div`

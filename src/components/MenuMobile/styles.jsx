@@ -6,12 +6,11 @@ import { Link } from 'react-router-dom';
 export const Main = styled.main`
     width: 100%;
     height: 100%;
-    max-height: 17vh;
+    max-height: 20vh;
     align-items: center;
     display: flex;
     flex-direction: column;
     position: static;
-
 `;
 
 export const Header = styled.header`
@@ -19,19 +18,15 @@ export const Header = styled.header`
     align-items: center;
     justify-content: space-between;
     display: flex;
-    padding: 0.8em;
+    padding: 0.5em;
 `;
-
-
-
 
 export const MenuLateral = styled.div` 
     width: 100vw;
-    height: 83vh;
-    position: fixed;
+    height: 80vh;
     background-color: #414143;
 
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
