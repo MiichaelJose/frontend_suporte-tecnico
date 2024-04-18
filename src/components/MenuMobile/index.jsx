@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-import { Main, Header, MenuLateral, Button, Opcoes } from "./styles"
+import { Main, Header, MenuLateral, Button, Opcoes, BottomSideBar } from "./styles"
 
 import Logo from "../LogoEmpresa"
 import LogoMenuAbrir from '../../assets/menu.png';
 import LogoMenuFechar from '../../assets/close.png';
 
-export default function Home() {
+export default function Home({children}) {
     const [mostrarComponente, setMostrarComponente] = useState(false);
 
     function tela () {
@@ -39,9 +39,13 @@ export default function Home() {
                         <p>SAIR</p>
                     </div>
                 </Opcoes>
+                <BottomSideBar>
+                    {children}
+                </BottomSideBar>
             </Main>
             
-            {mostrarComponente ? tela() : false }
+            
+            {/* hidden */}{mostrarComponente ? tela() : false }
         </>
     )
 }

@@ -4,18 +4,16 @@ import { config, urlLink } from "../../../config/config_script"
 
 import IconUser from "../../../assets/homem.png"
 import MenuMobile from '../../../components/MenuMobile'
-import BottomSideBar from "../Components/BottomSideBar"
 import Button from "../../../components/Button"
 
 export default function UsuarioRegistro() {
     return(
         <>
-            <MenuMobile/>
+            <MenuMobile>
+                <Button url={urlLink.urluserreg} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarreg}/>
+                <Button url={urlLink.urlusercad} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarcad}/>
+            </MenuMobile>
             <Section>
-                <BottomSideBar>
-                    <Button url={urlLink.urluserreg} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarreg}/>
-                    <Button url={urlLink.urlusercad} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarcad}/>
-                </BottomSideBar>
                 <AreaUsuarios>
                     <Card>
                         <div>
@@ -30,7 +28,7 @@ export default function UsuarioRegistro() {
                             <div>
                                 <Image src={IconUser}/>
                                 <div>
-                                    <input type="checkbox" name="check" id="check"  />
+                                    <input type="checkbox" name="check" id="check"/>
                                     <p>ACESSO</p>
                                 </div>
                             </div>
