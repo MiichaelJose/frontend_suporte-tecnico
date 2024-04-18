@@ -5,8 +5,7 @@ export const Pag = styled.div`
 
     width: 100%;
     max-width: 375px;
-    height: 80%;
-    max-height: 600px;
+    height: 500px;
 
     color: white;
     background-color: #838383;

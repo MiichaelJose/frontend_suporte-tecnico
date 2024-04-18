@@ -10,8 +10,8 @@ export default function TicketRegistro() {
     return(
         <>
             <MenuMobile>
-                <Button url={urlLink.urluserreg} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarreg}/>
-                <Button url={urlLink.urlusercad} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarcad}/>
+            <Button url={urlLink.urlticketreg} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarreg}/>
+                <Button url={urlLink.urlticketcad} background={config.buttoncolorbar} width={"100px"} text={config.buttontextbarcad}/>
             </MenuMobile>
             <Section>
                 <AreaServicosTicket>

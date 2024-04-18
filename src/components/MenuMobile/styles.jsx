@@ -39,8 +39,7 @@ export const Opcoes = styled.div`
 `
 
 export const BottomSideBar = styled.div`
-    width: 500px;
-    max-width: 100%;
+    width: 100%;
     height: 7vh;
     margin: 0 auto;
     display: flex;
