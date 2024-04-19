@@ -1,7 +1,7 @@
 import { Main } from "./styles"
 
-export default function Input({width}) {
+export default function Input({width, ...rest}) {
     return(
-        <Main width={width}/>
+        <Main width={width} {...rest}/>
     )
 }

@@ -13,24 +13,23 @@ export const AreaCadastro = styled.div`
     align-items: center;
 `
 
-export const FormUsuario = styled.div`
+export const Form = styled.div`
     width: 100%;
     max-width: 375px;
     height: 500px;
-
     background-color: #838383;
     border-radius: 5px;
     color: white;
     padding: 7px;
-
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
     
-    > div {
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: left;
+    select {
+        width: 30%;
+        height: 35px;
+        background-color: #BCBBBB;
     }
 
     button {
